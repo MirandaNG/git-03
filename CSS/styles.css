@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    font-family: "Sankofa Display", system-ui;
+    font-family: "Matemasie", system-ui;
     font-weight: 900;
     font-size: normal;
 }
@@ -69,4 +69,149 @@ body{
     background-color: lightskyblue;
     color: black;
     border-radius: 0.5em;
+}
+
+/* MAIN */
+.main{
+    background-color: white;
+    margin-top: -2rem;
+    border-radius: 0.3em;
+    padding: 0.3em;
+}
+
+.main-tittle{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* CARD */
+.card{
+    background-color: rgb(9, 198, 204);
+    color: white;
+    overflow: hidden;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.card-body{
+    padding: 1;
+}
+
+.card-body h5{
+    font-size: 1.5rem;
+    margin: 1em 0;
+    font-weight: 500;
+}
+
+.card-body p {
+    font-weight: 300;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    border-radius: 0.5em;
+}
+
+.btn-dark {
+    background-color: #3636363b;
+    color: white;
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color: lightblue;
+}
+
+.nosotros-col-img {
+    order: 2;
+    background-image: url(../assets/images/nosotros.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: cover;
+    height: 350px;
+    width: 100%;
+}
+
+.nosotros-col-text {
+    order: 1;
+
+}
+
+.nosotros-body {
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+.nosotros-body h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nosotros-body p {
+    font-weight: 200;
+}
+
+.btn-danger {
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.bg-footer {
+    background-color: midnightblue;
+    color: whitesmoke;
+}
+
+.bg-footer p {
+    padding: 1em;
+    margin: 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .navbar-brand {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+
+    .tienda {
+        display: flex;
+        gap: 1em;
+    }
+    
+    .nosotros {
+        flex-direction: row;
+    }
+
+    .nosotros-col-img {
+        order: 1;
+        flex: 1 1 0;
+    }
+
+    .nosotros-col-text {
+        order: 2;
+        flex: 1 1 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .nosotros-col-img {
+        height: 500px;
+    }
 }
